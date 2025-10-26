@@ -2,21 +2,26 @@
 
 Transform bedtime stories into magical visual experiences using AI. Upload a voice recording of any bedtime story, and watch as AI generates beautiful, synchronized visuals that bring the narrative to life.
 
-3. **Start the development servers:**
+## 🚀 Getting Started
+
+### 1. Install Dependencies
 
 ```bash
-# 1. Install dependencies
 npm run install:all
+```
 
-# 2. Start the app (both client and server)
+### 2. Start the Development Servers
+
+```bash
 npm run dev
+```
 
 This starts both:
 
 - Server on http://localhost:3000
 - Client on http://localhost:5173
 
-4. **Open your browser:**
+### 3. Open Your Browser
 
 Navigate to http://localhost:5173
 
@@ -43,12 +48,12 @@ The system performs two operations simultaneously:
 - WebRTC connection is established
 - Audio-reactive canvas begins streaming
 
-### 3. Scene Generation
+**3. Scene Generation:**
 
 - Once transcription is complete, it's sent to OpenAI GPT Model
 - GPT analyzes the story and creates 6-12 magical scenes
 
-### 4. Synchronized Playback
+**4. Synchronized Playback:**
 
 - User presses play
 - SceneScheduler precisely synchronizes audio and video
