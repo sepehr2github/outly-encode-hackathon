@@ -1,0 +1,73 @@
+.playback-controls {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.play-button {
+  width: 100%;
+  padding: 1.5rem;
+  background: linear-gradient(135deg, #a78bfa 0%, #ec4899 100%);
+  border: none;
+  border-radius: 50px;
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  box-shadow: 0 10px 30px rgba(167, 139, 250, 0.4);
+  transition: all 0.3s ease;
+}
+
+.play-button:hover:not(:disabled) {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 40px rgba(167, 139, 250, 0.6);
+}
+
+.button-icon {
+  font-size: 1.5rem;
+}
+
+.seek-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.time-display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  font-family: "Courier New", monospace;
+}
+
+.time-separator {
+  opacity: 0.5;
+}
+
+.seek-slider {
+  width: 100%;
+  cursor: pointer;
+}
+
+@media (max-width: 640px) {
+  .playback-controls {
+    padding: 1.5rem;
+  }
+
+  .play-button {
+    padding: 1.2rem;
+    font-size: 1.1rem;
+  }
+
+  .time-display {
+    font-size: 1rem;
+  }
+}

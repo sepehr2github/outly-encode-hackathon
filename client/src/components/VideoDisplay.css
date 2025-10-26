@@ -1,0 +1,46 @@
+.video-display {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.canvas-container,
+.stream-container {
+  padding: 1.5rem;
+}
+
+.canvas-container h3,
+.stream-container h3 {
+  margin: 0 0 1rem 0;
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.audio-canvas {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  background: #000;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.stream-iframe {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  border-radius: 12px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  background: #000;
+}
+
+@media (max-width: 640px) {
+  .canvas-container,
+  .stream-container {
+    padding: 1rem;
+  }
+
+  .canvas-container h3,
+  .stream-container h3 {
+    font-size: 1.1rem;
+  }
+}
